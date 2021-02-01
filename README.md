@@ -78,13 +78,13 @@ The topics below outline what you learn in the live session. After the live sess
 - When calling the `addEventListener` method, you need to pass to it two arguments:  
     -- The [name of the type of event](https://www.w3schools.com/jsref/dom_obj_event.asp) to listen for  
     -- A function that will be triggered when the event happens  
-- When passing the function in as an argument, it's good practice to pass in the name of the function instead of the entire function definition
-  -- Example: `submitButton.addEventListener('click', sendFormInfo)` 
-  -- Assume that `sendFormInfo` is the name of a function 
-  -- Notice that you don't include `()` on the end of `sendFormInfo` because you don't want to call the function now; only pass a reference to it  
-  -- This makes your code more reusable and easier to read and maintain than defining the function inside the `addEventListener` method  
-- Inside the listener's function, you can access the [event object](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_objects)   
-- The event object makes available to you the details of the event, such as the type of event, the HTML element it happened on, all the attributes of that HTML elements, and more  
+- When passing the function in as an argument, it's good practice to pass in the name of the function instead of the entire function definition  
+  -- Example: `submitButton.addEventListener('click', sendFormInfo)`   
+  -- Assume that `sendFormInfo` is the name of a function   
+  -- Notice that you don't include `()` on the end of `sendFormInfo` because you don't want to call the function now; only pass a reference to it    
+  -- This makes your code more reusable and easier to read and maintain than defining the function inside the `addEventListener` method    
+- Inside the listener's function, you can access the [event object](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_objects)     
+- The event object makes available to you the details of the event, such as the type of event, the HTML element it happened on, all the attributes of that HTML elements, and more    
 - You will commonly use the event object to get and modify the attributes of an HTML element, like its text content, styles, and more  
 - The event object is automatically passed to event handlers and is the first argument in your function definition  
 - In examples online, you will see the event object represented in code usually as `event`, `e`, or `evt`  
