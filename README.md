@@ -108,6 +108,14 @@ The live coding session continues working on the live code from the previous les
 3. Add event listeners to the remaining inputs and console log the value and two attributes you set for each  
 4. Add a click event listener to your submit button  
 5. When a user clicks the button, console log the text content and class list for the button  
-6. You should have two images on your page, one big and one small; make it so that the big image changes the photo that it displays when a user clicks it; you must have a minimum of three photos; use an array to store the photo names and the index position of the photo to set the src attribute of the img tag; when a user clicks on the photo, it should display the next photo in the array; when the user clicks on the last photo, it should display the first photo   
-
+6. You should have two images on your page, a big one and a small one; for the big one:
+    a. Add two buttons below it called previous and next
+    b. Use an array to store the photo names and the index position of the photo to set the src attribute of the img tag
+    c. You must have a minimum of three photos 
+    d. When a user is on the first photo in the array, the previous button should be hidden and disabled
+    e. When a user is on the last photo in the array, the next button should be hidden and disabled
+7. For the small button, make it so that the small image changes the photo that it displays when a user clicks it 
+    a. Use the same array as above
+    b. When a user clicks on the photo, it should display the next photo in the array
+    c. When a user clicks on the last photo, it should display the first photo   
 
