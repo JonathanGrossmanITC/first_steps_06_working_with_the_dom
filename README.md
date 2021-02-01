@@ -22,9 +22,9 @@ The topics below outline what you learn in the live session. After the live sess
 
 - The [DOM](https://www.w3schools.com/js/js_htmldom.asp) is an object-oriented representation of an HTML document 
 - When a webpage loads, the browser converts the HTML into a DOM  
-- Every element in an HTML document is part of the document object model for that document. For instance: 
+- Every element in an HTML document is part of the document object model for that document. For instance:  
     -— The `document` itself  
-    -- The `head` 
+    -- The `head`  
     -- The `body`  
     -- The elements inside the body, like `div`, `h1`, `p`  
 - You saw a [visual representation of the DOM](https://css-tricks.com/dom/) when you looked at the Elements tab in the inspector  
