@@ -1,8 +1,8 @@
 # Working With The DOM
 
-Welcome to the sixth lesson! In this lesson, you learn about the Document Object Model, commonly known as **The DOM**. 
+Welcome to the sixth lesson! In this lesson, you learn about the Document Object Model, commonly known as **The DOM**. Using the DOM, you can interact with your HTML document using JavaScript. With JavaScript, you can access, modify, and otherwise interact with your HTML document and the elements inside it.
 
-**ADD MORE INTRO**
+In this lesson, first you learn about what the DOM is. Next, you will look under the hood to learn about the properties and methods available for the HTML document itself and for the elements within it. Using these methods and properties, you can add functionality to your web pages. For instance, you can change the text, add and remove styles, capture user input, and so much more.  
 
 At the end of this lesson, you see a live coding example. The live coding session reinforces what you learn in the lesson. This lesson also helps prepare you for making your personal portfolio site. The code from the session is included in this repository. You can use it however you like, but as with any code you get from someone else, make sure you understand it well enough to explain it to someone before putting it in your own projects.  
 
