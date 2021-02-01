@@ -53,24 +53,51 @@ The topics below outline what you learn in the live session. After the live sess
 ### DOM Methods  
 
 - A document object has many [properties and methods](https://www.w3schools.com/jsref/dom_obj_document.asp)  
-- Commonly used methods for the *document* include:  
+- Commonly used **methods** for the **document** include:  
   -- [`getElementById`](https://www.w3schools.com/jsref/met_document_getelementbyid.asp)  
   -- [`createElement`](https://www.w3schools.com/jsref/met_document_createelement.asp)  
   -- [`getElementsByClassName`](https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp)  
   -- [`addEventListener`](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)  
 - Element objects also have [properties and methods](https://www.w3schools.com/jsref/dom_obj_all.asp)   
-- Commonly used methods for *elements* include:  
+- Commonly used **methods** for **elements** include:  
   -- [`appendChild`](https://www.w3schools.com/jsref/met_node_appendchild.asp)  
   -- [`removeChild`](w3schools.com/jsref/met_node_removechild.asp)  
   -- [`addEventListener`](https://www.w3schools.com/jsref/met_element_addeventlistener.asp)  
   -- [`getElementsByTagName`](https://www.w3schools.com/jsref/met_element_getelementsbytagname.asp)  
-- Commonly used properties for *elements* include:  
- -- [id](https://www.w3schools.com/jsref/prop_html_id.asp)  
- -- [classList](https://www.w3schools.com/jsref/prop_element_classlist.asp)  
- -- [textContent](https://www.w3schools.com/jsref/prop_node_textcontent.asp)  
+- Commonly used **properties** for **elements** include:  
+ -- [`id`](https://www.w3schools.com/jsref/prop_html_id.asp)  
+ -- [`classList`](https://www.w3schools.com/jsref/prop_element_classlist.asp)  
+ -- [`textContent`](https://www.w3schools.com/jsref/prop_node_textcontent.asp)  
  -- You will see online the use of `innerText` and `innerHTML` instead of `textContent` and you should know [the differences](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)  
 
 ### DOM Events  
+
+- The [`addEventListener` method](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) lets you turn a DOM element into an element that listens for an event to happen  
+- An event can be when a user clicks, types into an input, moves their mouse over an element, and much more    
+- To turn a DOM object into a listener, access it `getElementById` or create it using `createElement` and then call the `addEventListener` method; [on't use HTML attributes to listen for events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#what_mechanism_should_i_use)     
+- When calling the `addEventListener` method, you need to pass to it two arguments:  
+    -- The [name of the type of event](https://www.w3schools.com/jsref/dom_obj_event.asp) to listen for  
+    -- A function that will be triggered when the event happens  
+- When passing the function in as an argument, it's good practice to pass in the name of the function instead of the entire function definition
+  -- Example: `submitButton.addEventListener('click', sendFormInfo)` 
+  -- Assume that `sendFormInfo` is the name of a function 
+  -- Notice that you don't include `()` on the end of `sendFormInfo` because you don't want to call the function now; only pass a reference to it  
+  -- This makes your code more reusable and easier to read and maintain than defining the function inside the `addEventListener` method  
+- Inside the listener's function, you can access the [event object](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_objects)   
+- The event object makes available to you the details of the event, such as the type of event, the HTML element it happened on, all the attributes of that HTML elements, and more  
+- You will commonly use the event object to get and modify the attributes of an HTML element, like its text content, styles, and more  
+- The event object is automatically passed to event handlers and is the first argument in your function definition  
+- In examples online, you will see the event object represented in code usually as `event`, `e`, or `evt`  
+- For instance:  
+
+```javascript
+const getClickEvent = (e) => {
+  console.log(e.target.value);
+  console.log(e.target.classList);
+}
+
+submitButton.addEventListener('click', getClickEvent);
+```
 
 ## [Live Coding](#live-coding)   
 
