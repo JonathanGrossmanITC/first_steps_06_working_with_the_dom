@@ -103,4 +103,11 @@ submitButton.addEventListener('click', getClickEvent);
 
 The live coding session continues working on the live code from the previous lessons. Here are the tasks:
 
-1.  
+1.  You should already have four inputs in your form; one of those inputs should be a text input; add an event listeners to the input that listens for a change in value; when a change in value occurs, console log the value  
+2. You should have also explicitly set two attributes for that form input; console log those attributes when the change event happens    
+3. Add event listeners to the remaining inputs and console log the value and two attributes you set for each  
+4. Add a click event listener to your submit button  
+5. When a user clicks the button, console log the text content and class list for the button  
+6. You should have two images on your page, one big and one small; make it so that the big image changes the photo that it displays when a user clicks it; you must have a minimum of three photos; use an array to store the photo names and the index position of the photo to set the src attribute of the img tag; when a user clicks on the photo, it should display the next photo in the array; when the user clicks on the last photo, it should display the first photo   
+
+
