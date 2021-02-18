@@ -105,7 +105,7 @@ The live coding session continues working on the live code from the previous les
 4. Add a click event listener to your submit button    
 5. When a user clicks the button, console log the text content and class list for the button    
 6. You should have two images on your page, a big one and a small one; for the big one:    
-    a. Add two buttons below it called previous and next.   
+    a. Add two buttons below it called previous and next; review [this link](https://frontendmasters.github.io/bootcamp/interactive) for inspiration  
     b. Use an array to store the photo names and the index position of the photo to set the src attribute of the img tag    
     c. You must have a minimum of three photos     
     d. When a user is on the first photo in the array, the previous button should be hidden and disabled    
