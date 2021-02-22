@@ -19,7 +19,7 @@ The topics below outline what you learn in the live session. After the live sess
 - The [DOM](https://www.w3schools.com/js/js_htmldom.asp) is an object-oriented representation of an HTML document 
 - When a webpage loads, the browser converts the HTML into a DOM  
 - Every element in an HTML document is part of the document object model for that document. For instance:  
-    -— The `document` itself  
+    -- The `document` itself  
     -- The `head`  
     -- The `body`  
     -- The elements inside the body, like `div`, `h1`, `p`  
@@ -70,7 +70,7 @@ The topics below outline what you learn in the live session. After the live sess
 
 - The [`addEventListener` method](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) lets you turn a DOM element into an element that listens for an event to happen    
 - An event can be when a user clicks, types into an input, moves their mouse over an element, and much more    
-- To turn a DOM object into a listener, access it `getElementById` or create it using `createElement` and then call the `addEventListener` method; [on't use HTML attributes to listen for events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#what_mechanism_should_i_use)     
+- To turn a DOM object into a listener, access it `getElementById` or create it using `createElement` and then call the `addEventListener` method; [don't use HTML attributes to listen for events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#what_mechanism_should_i_use)     
 - When calling the `addEventListener` method, you need to pass to it two arguments:  
     -- The [name of the type of event](https://www.w3schools.com/jsref/dom_obj_event.asp) to listen for    
     -- A function that will be triggered when the event happens    
@@ -99,18 +99,16 @@ submitButton.addEventListener('click', getClickEvent);
 
 The live coding session continues working on the live code from the previous lessons. Here are the tasks:  
 
-1.  You should already have four inputs in your form; one of those inputs should be a text input; add an event listeners to the input that listens for a change in value; when a change in value occurs, console log the value  
-2. You should have also explicitly set two attributes for that form input; console log those attributes when the change event happens    
-3. Add event listeners to the remaining inputs and console log the value and two attributes you set for each    
-4. Add a click event listener to your submit button    
-5. When a user clicks the button, console log the text content and class list for the button    
-6. You should have two images on your page, a big one and a small one; for the big one:    
+1.  You should already have four inputs in your form; add an event listener to each input in form; the listeners should listen for a change in value; when a change in value occurs, console log the value  
+2. Console log the id attribute when a change in value occurs to that input in your form       
+3. Add a click event listener to your submit button; when a user clicks the button, console log the text content and class list for the button    
+4. You should have two images on your home page, a big one and a small one; for the big one:    
     a. Add two buttons below it called previous and next; review [this link](https://frontendmasters.github.io/bootcamp/interactive) for inspiration  
     b. Use an array to store the photo names and the index position of the photo to set the src attribute of the img tag    
     c. You must have a minimum of three photos     
     d. When a user is on the first photo in the array, the previous button should be hidden and disabled    
     e. When a user is on the last photo in the array, the next button should be hidden and disabled    
-7. For the small button, make it so that the small image changes the photo that it displays when a user clicks it    
+5. For the small button, make it so that the small image changes the photo that it displays when a user clicks it; similar concept as the previous task, but this time without buttons      
     a. Use the same array as above    
     b. When a user clicks on the photo, it should display the next photo in the array    
     c. When a user clicks on the last photo, it should display the first photo     
